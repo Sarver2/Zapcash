@@ -44,22 +44,10 @@ select {
   margin-top: 15px;
 }
 
-.google-icon {
-  width: 50px;
-  height: 50px;
-  background-image: url("logo/7123025_logo_google_g_icon.svg");
-}
-.apple-icon {
-  width: 40px;
-  height: 40px;
-  background-image: url("logo/104490_apple_icon.svg");
-  background-size: cover;
-}
+.google-icon,
+.apple-icon,
 .facebook-icon {
-  width: 35px;
-  height: 35px;
-  background-image: url("logo/3225194_app_facebook_logo_media_popular_icon.svg");
-  background-size: cover;
+  font-size: 40px;
 }
 
 /* landing page footer */
