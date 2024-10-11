@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-body {
-  height: 100vh;
-  height: -webkit-fill-available;
+@media (max-width: 450px) {
+  body {
+    height: 100vh;
+  }
+
+  input,
+  select {
+    height: 80px;
+  }
 }
 
 .card-body input,
