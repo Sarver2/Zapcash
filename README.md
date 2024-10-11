@@ -1,2 +1,2 @@
-# prank_UPI_app
+# ZAPcash App
 this app is only for funn.
