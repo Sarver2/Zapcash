@@ -29,10 +29,10 @@
   </head>
   <body>
     <!--creating landing page of the app-->
-    <section class="login d-flex justify-content-center" style="height: 480px">
+    <section class="login d-flex justify-content-center" style="height: 100vh">
       <div
         class="card p-2 pt-3 bg-light bg-gradient forChange"
-        style="width: 100%; border: none; border-radius: 0px"
+        style="width: 100%; border: none; border-radius: 0px; height: 100%"
       >
         <div class="card-body">
           <header class="landing-header">
@@ -40,7 +40,7 @@
               <div class="heading"><h4>Create an account</h4></div>
 
               <div class="login-link">
-                <span class=""
+                <span class="login-link"
                   >Already have an account?
                   <a href="#" style="color: #69385c; text-decoration: none"
                     >Login</a
@@ -69,7 +69,13 @@
                   style="width: 100%; display: flex; gap: 5px"
                 >
                   <select class="select-bank">
-                    <option value="" disabled selected style="font-size: small">
+                    <option
+                      class="first-option"
+                      value=""
+                      disabled
+                      selected
+                      style="font-size: small"
+                    >
                       Bank
                     </option>
                     <option value="sbi">State Bank of India (SBI)</option>
@@ -114,7 +120,11 @@
                   class="col-auto d-flex justify-content-end mt-0"
                   style="width: 100%"
                 >
-                  <span id="passwordHelpInline" class="form-text">
+                  <span
+                    id="passwordHelpInline"
+                    class="form-text"
+                    style="font-size: 18px"
+                  >
                     Must be 8-20 characters long.
                   </span>
                 </div>
@@ -146,7 +156,7 @@
               display: flex;
               justify-content: space-around;
               align-items: center;
-              font-size: 13px;
+              font-size: 19px;
               font-weight: 500;
             "
           >
@@ -157,7 +167,7 @@
 
           <!--logo-->
 
-          <div class="logo-container">
+          <div class="logo-container" style="margin-top: 35px">
             <div class="google-icon"><i class="bi bi-google"></i></div>
             <div class="apple-icon"><i class="bi bi-apple"></i></div>
             <div class="facebook-icon"><i class="bi bi-facebook"></i></div>
@@ -196,121 +206,116 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-body">
-            <div
-              class="card p-2 pt-3 bg-light bg-gradient"
-              style="width: 100%; border: none; border-radius: 0px"
-            >
-              <div class="card-body">
-                <header>
-                  <div class="payment-container">
-                    <div class="payment-heading">
-                      <h6>
-                        Secure payment with
-                        <span
-                          class="heading-logo"
-                          style="color: #69385c; font-weight: 700"
-                          >ZAPcash</span
-                        >
-                      </h6>
-                    </div>
-
-                    <div class="login-link">
-                      <span class="">Win exciting prizes and cashback </span>
-                    </div>
-                  </div>
-                </header>
-
-                <div class="form-container mt-5">
-                  <form class="login-form">
-                    <div class="row g-3 align-items-center">
-                      <div class="col-auto" style="width: 100%">
-                        <input
-                          type="tel"
-                          id="mobile-input"
-                          class="form-control"
-                          placeholder="Enter mobile"
-                        />
-                      </div>
-
-                      <div class="col-auto" style="width: 100%">
-                        <input
-                          type="text"
-                          id="amount-input"
-                          class="form-control"
-                          placeholder="Amount"
-                        />
-                      </div>
-
-                      <div class="col-auto" style="width: 100%">
-                        <input
-                          type="text"
-                          id="reciever-input"
-                          class="form-control"
-                          aria-describedby="passwordHelpInline"
-                          placeholder="Reciever's name"
-                        />
-                      </div>
-
-                      <div class="col-auto" style="width: 100%">
-                        <button
-                          type="button"
-                          class="btn"
-                          id="payment-btn"
-                          style="
-                            width: 100%;
-                            background-color: #69385c;
-                            color: white;
-                            font-weight: 500;
-                          "
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal2"
-                        >
-                          Pay
-                        </button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-
-                <!--line break-->
-                <div
-                  class="line-break mt-4"
-                  style="
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    font-size: 13px;
-                    font-weight: 500;
-                  "
-                >
-                  <div style="width: 33%"><hr /></div>
-                  <div><span> UPI payment</span></div>
-                  <div style="width: 33%"><hr /></div>
-                </div>
-
-                <!--logo-->
-
-                <div class="zap-logo-container">
-                  <div class="zap-icon"><h3 class="main-logo">ZAPcash</h3></div>
-                </div>
-
-                <!--footer-->
-
-                <div class="payment-footer">
-                  <div>
-                    <span>We are official UPI payment partner</span>
-                  </div>
-                  <div>
-                    <span
-                      ><a href="#" style="color: #69385c; text-decoration: none"
-                        >Terms of user</a
+            <div class="card-body" style="height: 100%">
+              <header>
+                <div class="payment-container">
+                  <div class="payment-heading">
+                    <h6>
+                      Secure payment with
+                      <span
+                        class="heading-logo"
+                        style="color: #69385c; font-weight: 700"
+                        >ZAPcash</span
                       >
-                      and
-                      <a href="#" style="color: #69385c; text-decoration: none"
-                        >Privacy policy</a
-                      ></span
-                    >
+                    </h6>
                   </div>
+
+                  <div class="login-link">
+                    <span class="">Win exciting prizes and cashback </span>
+                  </div>
+                </div>
+              </header>
+
+              <div class="form-container mt-5">
+                <form class="login-form">
+                  <div class="row g-3 align-items-center">
+                    <div class="col-auto" style="width: 100%">
+                      <input
+                        type="tel"
+                        id="mobile-input"
+                        class="form-control"
+                        placeholder="Enter mobile"
+                      />
+                    </div>
+
+                    <div class="col-auto" style="width: 100%">
+                      <input
+                        type="text"
+                        id="amount-input"
+                        class="form-control"
+                        placeholder="Amount"
+                      />
+                    </div>
+
+                    <div class="col-auto" style="width: 100%">
+                      <input
+                        type="text"
+                        id="reciever-input"
+                        class="form-control"
+                        aria-describedby="passwordHelpInline"
+                        placeholder="Reciever's name"
+                      />
+                    </div>
+
+                    <div class="col-auto" style="width: 100%">
+                      <button
+                        type="button"
+                        class="btn"
+                        id="payment-btn"
+                        style="
+                          width: 100%;
+                          background-color: #69385c;
+                          color: white;
+                          font-weight: 500;
+                        "
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
+                      >
+                        Pay
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!--line break-->
+              <div
+                class="line-break mt-4"
+                style="
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+                  font-size: 13px;
+                  font-weight: 500;
+                "
+              >
+                <div style="width: 33%"><hr /></div>
+                <div><span> UPI payment</span></div>
+                <div style="width: 33%"><hr /></div>
+              </div>
+
+              <!--logo-->
+
+              <div class="zap-logo-container">
+                <div class="zap-icon"><h3 class="main-logo">ZAPcash</h3></div>
+              </div>
+
+              <!--footer-->
+
+              <div class="payment-footer">
+                <div>
+                  <span>We are official UPI payment partner</span>
+                </div>
+                <div>
+                  <span
+                    ><a href="#" style="color: #69385c; text-decoration: none"
+                      >Terms of user</a
+                    >
+                    and
+                    <a href="#" style="color: #69385c; text-decoration: none"
+                      >Privacy policy</a
+                    ></span
+                  >
                 </div>
               </div>
             </div>
@@ -335,7 +340,10 @@
               class="card"
               style="width: 100%; border: none; border-radius: 0px"
             >
-              <div class="card-body pt-1 bg-success" style="height: 52vh">
+              <div
+                class="card-body pt-1 bg-success"
+                style="height: fit-content"
+              >
                 <div class="zap-logo-container">
                   <div class="zap-icon"><h3 class="main-logo">ZAPcash</h3></div>
                 </div>
@@ -350,7 +358,7 @@
                   class="payment-msg text-light d-flex justify-content-center mt-3"
                   style="width: 100%; font-weight: 600; text-align: center"
                 >
-                  <div style="width: 200px">
+                  <div style="width: 200px; font-size: 20px">
                     <span
                       >Payment of <i class="bi bi-currency-rupee"></i
                       ><span class="display-amount">25,000</span> to
@@ -365,38 +373,38 @@
                   <div class="check-balance">CHECK BALANCE</div>
                 </div>
               </div>
-
-              <div
-                class="second-body"
-                style="
-                  background-color: #2d0e25;
-                  padding-top: 10px;
-                  height: 50px;
-                "
-              >
-                <div class="sponsored">
-                  <span
-                    style="
-                      padding-bottom: 10px;
-                      padding-left: 7px;
-                      color: aliceblue;
-                      font-size: small;
-                      font-weight: 600;
-                    "
-                    >Sponsored Links</span
-                  >
-                  <div class="sponsored-link">
-                    <div class="spn-amzn"></div>
-                    <div class="spn-flpct"></div>
-                    <div class="spn-snap"></div>
-                    <div class="spn-myntra"></div>
-                  </div>
+            </div>
+            <div
+              class="second-body"
+              style="
+                background-color: #2d0e25;
+                padding-top: 10px;
+                height: fit-content;
+                margin-top: 70px;
+              "
+            >
+              <div class="sponsored">
+                <span
+                  style="
+                    padding-bottom: 10px;
+                    padding-left: 7px;
+                    color: aliceblue;
+                    font-size: small;
+                    font-weight: 600;
+                  "
+                  >Sponsored Links</span
+                >
+                <div class="sponsored-link">
+                  <div class="spn-amzn"></div>
+                  <div class="spn-flpct"></div>
+                  <div class="spn-snap"></div>
+                  <div class="spn-myntra"></div>
                 </div>
+              </div>
 
-                <div class="sip">
-                  <span class="sip-text">Grow your money with Best SIP</span>
-                  <span class="sip-text2">Funds. Start with just Rs. 100.</span>
-                </div>
+              <div class="sip">
+                <span class="sip-text">Grow your money with Best SIP</span>
+                <span class="sip-text2">Funds. Start with just Rs. 100.</span>
               </div>
             </div>
           </div>
