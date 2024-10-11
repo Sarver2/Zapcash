@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+body {
+  height: 100vh;
+  height: -webkit-fill-available;
+}
+
 .card-body input,
 select {
   background-color: #e6e6e6;
