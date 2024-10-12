@@ -37,11 +37,11 @@
   }
 
   h6 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .login-link .offer-line {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .payment-header {
@@ -52,15 +52,18 @@
     padding-top: 50px;
   }
 
+  .signup-footer {
+    font-size: 25px;
+  }
+
   .payment-footer {
-    padding-top: 20px;
+    padding-top: 15px;
   }
 }
 
 .card-body input,
 select {
   background-color: #e6e6e6;
-  /* opacity: 20%; */
 }
 
 input::placeholder {
@@ -71,7 +74,7 @@ select {
   width: 25%;
   border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 4px;
   color: #747474;
 }
 /* header of lading page */
@@ -117,13 +120,15 @@ select {
   text-align: center;
   margin-top: 40px;
   padding-top: 25px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .payment-footer {
-  margin-top: 60px;
+  margin-top: 50px;
   padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 12px;
 }
 /*----------------------------- payment page------------------------------------------------ */
 
