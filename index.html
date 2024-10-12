@@ -65,19 +65,17 @@
                   />
                 </div>
 
-                <div
-                  class="col-auto"
-                  style="width: 100%; display: flex; gap: 5px"
-                >
-                  <select class="select-bank">
-                    <option
-                      class="first-option"
-                      value=""
-                      disabled
-                      selected
-                      style="font-size: small"
-                    >
-                      Bank
+                <div class="col-auto" style="width: 100%">
+                  <select
+                    class="select-bank form-control"
+                    style="
+                      background-color: #e6e6e6;
+                      color: #676767;
+                      font-size: 20px;
+                    "
+                  >
+                    <option class="first-option" value="" disabled selected>
+                      Select your Bank
                     </option>
                     <option value="sbi">State Bank of India (SBI)</option>
                     <option value="hdfc">HDFC Bank</option>
@@ -95,7 +93,9 @@
                     <option value="bandhan">Bandhan Bank</option>
                     <option value="federal">Federal Bank</option>
                   </select>
+                </div>
 
+                <div class="col-auto" style="width: 100%">
                   <input
                     type="text"
                     id="input-account"
@@ -103,7 +103,17 @@
                     aria-describedby="passwordHelpInline"
                     placeholder="Account number"
                     required
-                    style="width: 80%"
+                  />
+                </div>
+
+                <div class="col-auto" style="width: 100%">
+                  <input
+                    type="text"
+                    id="c-input-account"
+                    class="form-control"
+                    aria-describedby="passwordHelpInline"
+                    placeholder="Confirm Account"
+                    required
                   />
                 </div>
 
@@ -150,6 +160,18 @@
             </form>
           </div>
 
+          <div
+            class="col-auto d-flex justify-content-center mt-0"
+            style="width: 100%"
+          >
+            <span
+              id="passwordHelpInline"
+              class="form-text"
+              style="font-size: 16px"
+            >
+              <a href="#" style="color: #2d0e25">Forget password?</a>
+            </span>
+          </div>
           <!--line break-->
           <div
             class="line-break mt-4 first-line"
@@ -420,6 +442,7 @@
               id="done-btn"
               style="
                 width: 100%;
+                height: 50px;
                 background-color: #69385c;
                 color: white;
                 font-weight: 500;
@@ -462,7 +485,10 @@
                 <span class="msg-date" style="text-decoration: underline"></span
                 >.UPI Ref
                 <span style="text-decoration: underline">407799386146</span>.
-                Not you, <a href="#" style="color: black">kota.com/fraud</a>
+                Not you,
+                <a href="#" style="color: black"
+                  ><span class="display-bank3"></span>.com/fraud</a
+                >
               </div>
             </div>
           </div>
