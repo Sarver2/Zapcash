@@ -56,7 +56,7 @@ function display() {
   const displayAmnt = document.querySelector(".display-amount");
   const displayName = document.querySelector(".display-name");
 
-  displayAmnt.innerHTML = `${amountInput * 1000}`;
+  displayAmnt.innerHTML = `${amountInput * 100}`;
   displayName.innerHTML = `${recieverName.toUpperCase()}`;
 
   let date = new Date();
