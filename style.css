@@ -71,12 +71,13 @@ input::placeholder {
 }
 
 select {
-  width: 25%;
+  width: 100%;
   border: none;
   border-radius: 8px;
   padding: 4px;
-  color: #747474;
+  color: #dcd2d2;
 }
+
 /* header of lading page */
 
 .heading-container {
@@ -103,7 +104,7 @@ select {
   align-items: center;
   margin-top: 15px;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .google-icon,
@@ -118,14 +119,14 @@ select {
 .signup-footer {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  padding-top: 25px;
-  font-size: 13px;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 12px;
   font-weight: 500;
 }
 
 .payment-footer {
-  margin-top: 50px;
+  margin-top: 15px;
   padding-top: 50px;
   padding-bottom: 20px;
   font-size: 12px;
