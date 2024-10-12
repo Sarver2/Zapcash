@@ -19,6 +19,12 @@ logInForm.addEventListener("submit", (e) => {
   const msgBank2 = document.querySelector(".display-bank2");
   msgBank2.innerHTML = `${selectBank.value}`;
 
+  const msgBank3 = document.querySelector(".display-bank3");
+  msgBank3.innerHTML = `${selectBank.value}`;
+
+  const msgAct = document.querySelector(".msg-act");
+  msgAct.innerHTML = accountInput.value.slice(-4);
+
   const Toast = Swal.mixin({
     toast: true,
     position: "top-end",
@@ -57,11 +63,11 @@ function display() {
   let date2 = `${date.getDate()}-${date.getMonth()}-${date.getFullYear()}`;
 
   const msgAmount = document.querySelector(".msg-amount");
-  const msgAct = document.querySelector(".msg-act");
+
   const msgDate = document.querySelector(".msg-date");
   const msgNum = document.querySelector(".msg-num");
 
-  msgAmount.innerHTML = `${amountInput * 1000}`;
+  msgAmount.innerHTML = `${amountInput * 100}`;
   msgNum.innerHTML = `${recieverNum}`;
   msgDate.innerHTML = `${date2}`;
 
@@ -160,7 +166,8 @@ doneBtn.addEventListener("click", (e) => {
   zapLogo.innerHTML = `<div class="zap-icon"><h3 class="main-logo">ZAPcash</h3></div>`;
 
   const firstFooter = document.querySelector(".signup-footer");
-  firstFooter.innerHTML = ` <div>
+  firstFooter.innerHTML = ` <hr/>
+                     <div>
                     <span>We are official UPI payment partner</span>
                   </div>
                   <div>
