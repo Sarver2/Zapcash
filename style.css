@@ -280,10 +280,12 @@ select {
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-left: 15px;
+  gap: 80px;
+  margin-top: 20px;
+
   /* border: 2px solid black; */
-  padding-left: 5px;
-  padding-right: 5px;
 }
 
 .bank-act {
@@ -308,9 +310,9 @@ select {
   height: 50px;
   background-color: #e8e8e8;
   display: flex;
-  justify-content: space-between;
-  padding-left: 5px;
-  padding-right: 5px;
+  justify-content: flex-start;
+  padding-left: 15px;
+  gap: 130px;
 }
 
 .info2 {
@@ -329,9 +331,10 @@ select {
 }
 
 .upi-enter-info {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
-  padding-top: 12px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .pin-box {
@@ -339,7 +342,8 @@ select {
   height: 40px;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   padding: 10px;
   /* border: 1px solid black; */
 }
@@ -355,8 +359,9 @@ select {
   width: 90%;
   height: 65px;
   margin-top: 55px;
+  margin-bottom: 50px;
   border-radius: 13px;
-  background-color: #f3f37b;
+  background-color: palegoldenrod;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -381,7 +386,10 @@ select {
 /*upi footer */
 .upi-footer {
   width: 100%;
+  height: 60%;
   display: grid;
+  margin-top: 30px;
+
   padding-bottom: 15px;
   grid-template-columns: repeat(3, 33.4%); /* Three columns, each 100px wide */
   background-color: #e8e8e8;
@@ -389,7 +397,7 @@ select {
 }
 
 .keys {
-  height: 50px;
+  height: 60px;
   /* border: 1px solid black; */
   display: flex;
   font-weight: 500;
