@@ -295,7 +295,7 @@
                           font-weight: 500;
                         "
                         data-bs-toggle="modal"
-                        data-bs-target="#exampleModal2"
+                        data-bs-target="#exampleModal4"
                       >
                         Pay
                       </button>
@@ -458,6 +458,96 @@
       </div>
     </div>
 
+    <!--upi interface-->
+    <div
+      class="modal fade payment-modal"
+      id="exampleModal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-body p-0 pt-1">
+            <header>
+              <div class="upi-header">
+                <div class="bank-act">
+                  <div class="bank-name">Kotak mahindra bank</div>
+                  <div class="act-num" style="font-size: 20px">
+                    XXXX<span class="upi-act">5251</span>
+                  </div>
+                </div>
+                <div class="upi-logo"></div>
+              </div>
+
+              <div class="payment-info">
+                <div class="info">
+                  <div class="to">To:</div>
+                  <div class="sending">Sending:</div>
+                </div>
+
+                <div class="info2">
+                  <div class="info-name">Sarver Alam</div>
+                  <div class="info-amt">
+                    <i class="bi bi-currency-rupee"></i
+                    ><span class="info-amt-display"></span>
+                  </div>
+                </div>
+              </div>
+            </header>
+
+            <main class="upi-body">
+              <div class="upi-enter-info">ENTER 6-DIGIT UPI PIN</div>
+              <div class="pin-box">
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+              </div>
+
+              <div class="upi-warning">
+                <div class="alert-icon">
+                  <i
+                    class="bi bi-exclamation-circle-fill"
+                    style="color: #f8b610"
+                  ></i>
+                </div>
+                <div class="warning-text">
+                  <span>You are transferring money from your</span>
+                  <span>
+                    <span class="bank-full-name">Kotak Mahindra Bank</span>
+                    account to
+                  </span>
+                  <span class="reciever-display">sarver alam</span>
+                </div>
+              </div>
+            </main>
+
+            <footer class="upi-footer">
+              <div type="button" class="keys" value="">1</div>
+              <div type="button" class="keys" value="">2</div>
+              <div type="button" class="keys" value="">3</div>
+              <div type="button" class="keys" value="">4</div>
+              <div type="button" class="keys" value="">5</div>
+              <div type="button" class="keys" value="">6</div>
+              <div type="button" class="keys" value="">7</div>
+              <div type="button" class="keys" value="">8</div>
+              <div type="button" class="keys" value="">9</div>
+              <div type="button" class="keys" value="">
+                <i class="bi bi-backspace-fill"></i>
+              </div>
+              <div type="button" class="keys" value="">0</div>
+              <div type="button" class="keys" value="">
+                <i class="bi bi-check-circle-fill" style="font-size: 40px"></i>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!--payment notification-->
 
     <div
@@ -496,18 +586,16 @@
       </div>
     </div>
 
-<audio
+    <audio
       id="notification-sound1"
       src="logo/level-up-191997.mp3"
       preload="auto"
     ></audio>
-    
-   <audio
+
+    <audio
       id="notification-sound2"
       src="logo/phone_pe_notification.mp3"
     ></audio>
-
-   
     <audio id="notification-sound3" src="logo/livechat-129007.mp3"></audio>
     <!--bootstrap_cdn-->
     <script
