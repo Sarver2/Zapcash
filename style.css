@@ -283,7 +283,7 @@ select {
   justify-content: flex-start;
   padding-left: 15px;
   gap: 150px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   /* border: 2px solid black; */
 }
