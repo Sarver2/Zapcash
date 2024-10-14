@@ -223,6 +223,39 @@ backSpace.addEventListener("click", (e) => {
 const check = document
   .querySelector("#check")
   .addEventListener("click", (e) => {
+    const child = document.querySelectorAll(".child");
+    const pinBox = document.querySelector(".pin-box");
+    pinBox.innerHTML = ` <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>
+                <div class="child"><hr /></div>`;
+
+    const keys = document.querySelectorAll(".keys");
+    let currentIndex = 0;
+    keys.forEach((key, index) => {
+      key.addEventListener("click", (e) => {
+        const child = document.querySelectorAll(".child");
+
+        if (currentIndex < child.length) {
+          child[currentIndex].innerHTML = "*";
+
+          currentIndex++;
+        }
+      });
+    });
+
+    const backSpace = document.querySelector("#backspace");
+
+    backSpace.addEventListener("click", (e) => {
+      const child = document.querySelectorAll(".child");
+      if (currentIndex > 0) {
+        currentIndex--;
+        child[currentIndex].innerHTML = `<hr/>`;
+      }
+    });
+
     const sound2 = document.getElementById("notification-sound2");
     sound2.play();
 
